@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import {addProduct} from "../actions/product"
+import {createProduct} from "../actions/product"
 
 class ProductForm extends Component {
     
@@ -17,7 +17,11 @@ class ProductForm extends Component {
         e.preventDefault()
         // WE WANT TO TAKE THE OBJECT THAT WE ARE SUBMITTING 
         // AND PASS IT TO THE REDUCER
-        this.props.addProduct(this.state)
+        this.props.createProduct(this.state)
+        this.setState({
+            name: "",
+            quantity: 0
+        })
     }
     
     render() {
@@ -43,11 +47,11 @@ class ProductForm extends Component {
 
 // const MDTP = (dispatch) => {
 //     return{
-//         addProduct: (product) => dispatch(addProduct(product))
+//         createProduct: (product) => dispatch(createProduct(product))
 //     }
 
 // }
 
 
 // connect() -> returns a function. We can then invoke again and pass in our component
-export default connect(null, { addProduct })(ProductForm)   
+export default connect(null, { createProduct })(ProductForm)   

@@ -19,7 +19,7 @@ Making an asynchronous request with redux. We will connect a backend with our cu
     - A. reducer
     - B. action
     - C. dispatch
-    - D. dispatch(action)
+    - D. provider
 ---
 ## Deliverables
 ---

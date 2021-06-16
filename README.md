@@ -5,11 +5,21 @@ Making an asynchronous request with redux. We will connect a backend with our cu
 ## Vocab List: 
 ---
 - What is CreateStore: 
-    - what arguments does it take? 
+    - what arguments does it take?
+- What is the Provider: 
+    - What should we give the provider to make it happen? 
 - Reducer:
     - What arguments does it take? 
+- Dispatch:
+    - What arguments does it take?
 - Action:
-    - (END OF LECTURE): How does thunk affect our action?
+    - (END OF LECTURE): How does thunk change our action?
+---
+- Out of the four vocab words above, which actually makes a state change and a triggers a re-render? 
+    - A. reducer
+    - B. action
+    - C. dispatch
+    - D. dispatch(action)
 ---
 ## Deliverables
 ---
